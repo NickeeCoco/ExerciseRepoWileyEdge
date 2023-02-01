@@ -12,6 +12,8 @@ public class GuessMeFinally {
         boolean isValid = false;
         boolean isPlaying = true;
 
+        int tries = 0;
+
         Scanner userInput = new Scanner(System.in);
 
         System.out.println("I've chosen an number between -100 and 100. Bet you can't guess it!");
@@ -21,16 +23,21 @@ public class GuessMeFinally {
                 try {
                     guess = Integer.parseInt(userInput.nextLine());
                     isValid = true;
+                    tries++;
                 } catch (NumberFormatException ex) {
                     System.out.println("Please input a valid number");
                 }
             } while (!isValid);
 
-            System.out.println("your guess: " + guess);
+            System.out.println("Your guess: " + guess);
             System.out.println();
 
             if (guess == answer) {
-                System.out.println("Wow, nice guess! That was it!");
+                if(tries == 1) {
+                    System.out.println("Wow, nice guess! That was it!");
+                } else {
+                    System.out.println("Finally! It's about time you got it!");
+                }
                 isPlaying = false;
             }
 
