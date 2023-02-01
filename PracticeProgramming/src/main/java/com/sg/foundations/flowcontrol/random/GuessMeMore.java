@@ -10,14 +10,33 @@ public class GuessMeMore {
         int answer = randomizer.nextInt(100 + 100) - 100;
         int guess = 0;
         boolean isValid = false;
-        boolean isPlaying = true;
 
         Scanner userInput = new Scanner(System.in);
 
         System.out.println("I've chosen an number between -100 and 100. Bet you can't guess it!");
 
-        while(isPlaying) {
+        do {
+            isValid = false;
+            try {
+                guess = Integer.parseInt(userInput.nextLine());
+                isValid = true;
+            } catch (NumberFormatException ex) {
+                System.out.println("Please input a valid number");
+            }
+        } while (!isValid);
+
+        System.out.println("your guess: " + guess);
+        System.out.println();
+
+        if (guess == answer) {
+            System.out.println("Wow, nice guess! That was it!");
+        }
+
+        if (guess > answer) {
+            System.out.println(guess + "? Ha, nice try - too high! Try again!");
+
             do {
+                isValid = false;
                 try {
                     guess = Integer.parseInt(userInput.nextLine());
                     isValid = true;
@@ -26,21 +45,44 @@ public class GuessMeMore {
                 }
             } while (!isValid);
 
-            System.out.println("your guess: " + guess);
-            System.out.println();
-
             if (guess == answer) {
                 System.out.println("Wow, nice guess! That was it!");
-                isPlaying = false;
             }
 
             if (guess > answer) {
-                System.out.println(guess + "? Ha, nice try - too high! Try again!");
+                System.out.println("Too high... The answer was " + answer);
             }
 
             if (guess < answer) {
-                System.out.println(guess + "? Ha, nice try - too low! Try again!");
+                System.out.println("Too low... The answer was " + answer);
             }
         }
+
+        if (guess < answer) {
+            System.out.println(guess + "? Ha, nice try - too low! Try again!");
+
+            do {
+                isValid = false;
+                try {
+                    guess = Integer.parseInt(userInput.nextLine());
+                    isValid = true;
+                } catch (NumberFormatException ex) {
+                    System.out.println("Please input a valid number");
+                }
+            } while (!isValid);
+
+            if (guess == answer) {
+                System.out.println("Wow, nice guess! That was it!");
+            }
+
+            if (guess > answer) {
+                System.out.println("Too high... The answer was " + answer);
+            }
+
+            if (guess < answer) {
+                System.out.println("Too low... The answer was " + answer);
+            }
+        }
+
     }
 }
