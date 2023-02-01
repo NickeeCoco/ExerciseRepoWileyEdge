@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: com.sg.jdbctcomplexexample.dao.MeetingDaoDBTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE!
+com.sg.jdbctcomplexexample.dao.MeetingDaoDBTest.testGetMeetingsForRoom()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.sg.jdbctcomplexexample.dao.EmployeeDao.addEmployee(com.sg.jdbctcomplexexample.entity.Employee)" because "this.employeeDao" is null
+	at com.sg.jdbctcomplexexample.dao.MeetingDaoDBTest.testGetMeetingsForRoom(MeetingDaoDBTest.java:225)
+
+com.sg.jdbctcomplexexample.dao.MeetingDaoDBTest.testGetMeetingsForEmployee()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.sg.jdbctcomplexexample.dao.EmployeeDao.addEmployee(com.sg.jdbctcomplexexample.entity.Employee)" because "this.employeeDao" is null
+	at com.sg.jdbctcomplexexample.dao.MeetingDaoDBTest.testGetMeetingsForEmployee(MeetingDaoDBTest.java:278)
+
+com.sg.jdbctcomplexexample.dao.MeetingDaoDBTest.testGetAllMeetings()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.sg.jdbctcomplexexample.dao.RoomDao.addRoom(com.sg.jdbctcomplexexample.entity.Room)" because "this.roomDao" is null
+	at com.sg.jdbctcomplexexample.dao.MeetingDaoDBTest.testGetAllMeetings(MeetingDaoDBTest.java:98)
+
+com.sg.jdbctcomplexexample.dao.MeetingDaoDBTest.testDeleteMeeting()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.sg.jdbctcomplexexample.dao.EmployeeDao.addEmployee(com.sg.jdbctcomplexexample.entity.Employee)" because "this.employeeDao" is null
+	at com.sg.jdbctcomplexexample.dao.MeetingDaoDBTest.testDeleteMeeting(MeetingDaoDBTest.java:193)
+
+com.sg.jdbctcomplexexample.dao.MeetingDaoDBTest.testUpdateMeeting()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.sg.jdbctcomplexexample.dao.RoomDao.addRoom(com.sg.jdbctcomplexexample.entity.Room)" because "this.roomDao" is null
+	at com.sg.jdbctcomplexexample.dao.MeetingDaoDBTest.testUpdateMeeting(MeetingDaoDBTest.java:144)
+
+com.sg.jdbctcomplexexample.dao.MeetingDaoDBTest.testAddGetMeeting()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.sg.jdbctcomplexexample.dao.RoomDao.addRoom(com.sg.jdbctcomplexexample.entity.Room)" because "this.roomDao" is null
+	at com.sg.jdbctcomplexexample.dao.MeetingDaoDBTest.testAddGetMeeting(MeetingDaoDBTest.java:68)
+

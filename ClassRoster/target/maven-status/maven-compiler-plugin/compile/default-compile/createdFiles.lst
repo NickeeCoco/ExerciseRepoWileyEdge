@@ -1,0 +1,7 @@
+com\sg\classes_objects\classroster\dto\Student.class
+com\sg\classes_objects\classroster\ui\UserIOConsoleImpl.class
+com\sg\classes_objects\classroster\ui\UserIO.class
+com\sg\classes_objects\classroster\App.class
+com\sg\classes_objects\classroster\ui\ClassRosterView.class
+com\sg\classes_objects\classroster\dao\ClassRosterDao.class
+com\sg\classes_objects\classroster\dao\ClassRosterDaoFileImpl.class

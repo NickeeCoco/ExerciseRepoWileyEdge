@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.sg.guessthenumber.data.RoundDatabaseDaoTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in com.sg.guessthenumber.data.RoundDatabaseDaoTest
+testAddNewRound  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.sg.guessthenumber.data.GameDao.findGameById(int)" because "this.gameDao" is null
+	at com.sg.guessthenumber.data.RoundDatabaseDaoTest.testAddNewRound(RoundDatabaseDaoTest.java:32)
+

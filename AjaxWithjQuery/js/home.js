@@ -1,0 +1,24 @@
+$(document).ready(function () {
+
+    $.ajax({
+        type: 'GET',
+        url: 'http://contactlist.us-east-1.elasticbeanstalk.com/contacts',
+        success: function (contactArray) {
+            let contactsDiv = $('#allContacts');
+
+            $.each(contactArray, function (index, contact) {
+                let contactInfo = '<p>';
+                contactInfo += 'Name: ' + contact.firstName + ' ' + contact.lastName + '<br>';
+                contactInfo += 'Company: ' + contact.company + '<br>';
+                contactInfo += 'Email: ' + contact.email + '<br>';
+                contactInfo += 'Phone: ' + contact.phone + '<br>';
+                contactInfo += '</p><hr>';
+
+                contactsDiv.append(contactInfo);
+            })
+        },
+        error: function () {
+            alert('FAILURE!');
+        }
+    })
+})

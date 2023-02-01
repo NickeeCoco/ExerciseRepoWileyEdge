@@ -1,0 +1,15 @@
+G:\Code\wiley_edge\exercise-repo-NickeeCoco\ClassRoster\src\main\java\com\sg\classes_objects\classroster\controller\ClassRosterController.java
+G:\Code\wiley_edge\exercise-repo-NickeeCoco\ClassRoster\src\main\java\com\sg\classes_objects\classroster\dao\ClassRosterDao.java
+G:\Code\wiley_edge\exercise-repo-NickeeCoco\ClassRoster\src\main\java\com\sg\classes_objects\classroster\dao\ClassRosterPersistenceException.java
+G:\Code\wiley_edge\exercise-repo-NickeeCoco\ClassRoster\src\main\java\com\sg\classes_objects\classroster\service\ClassRosterServiceLayerImpl.java
+G:\Code\wiley_edge\exercise-repo-NickeeCoco\ClassRoster\src\main\java\com\sg\classes_objects\classroster\service\ClassRosterDuplicateIdException.java
+G:\Code\wiley_edge\exercise-repo-NickeeCoco\ClassRoster\src\main\java\com\sg\classes_objects\classroster\dto\Student.java
+G:\Code\wiley_edge\exercise-repo-NickeeCoco\ClassRoster\src\main\java\com\sg\classes_objects\classroster\service\ClassRosterServiceLayer.java
+G:\Code\wiley_edge\exercise-repo-NickeeCoco\ClassRoster\src\main\java\com\sg\classes_objects\classroster\dao\ClassRosterAuditDao.java
+G:\Code\wiley_edge\exercise-repo-NickeeCoco\ClassRoster\src\main\java\com\sg\classes_objects\classroster\ui\UserIO.java
+G:\Code\wiley_edge\exercise-repo-NickeeCoco\ClassRoster\src\main\java\com\sg\classes_objects\classroster\App.java
+G:\Code\wiley_edge\exercise-repo-NickeeCoco\ClassRoster\src\main\java\com\sg\classes_objects\classroster\ui\UserIOConsoleImpl.java
+G:\Code\wiley_edge\exercise-repo-NickeeCoco\ClassRoster\src\main\java\com\sg\classes_objects\classroster\ui\ClassRosterView.java
+G:\Code\wiley_edge\exercise-repo-NickeeCoco\ClassRoster\src\main\java\com\sg\classes_objects\classroster\dao\ClassRosterAuditDaoFileImpl.java
+G:\Code\wiley_edge\exercise-repo-NickeeCoco\ClassRoster\src\main\java\com\sg\classes_objects\classroster\service\ClassRosterDataValidationException.java
+G:\Code\wiley_edge\exercise-repo-NickeeCoco\ClassRoster\src\main\java\com\sg\classes_objects\classroster\dao\ClassRosterDaoFileImpl.java

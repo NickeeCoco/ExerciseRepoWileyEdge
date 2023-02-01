@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: com.sg.jdbctcomplexexample.dao.RoomDaoDBTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE!
+com.sg.jdbctcomplexexample.dao.RoomDaoDBTest.testAddGetRoom()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.sg.jdbctcomplexexample.dao.RoomDao.addRoom(com.sg.jdbctcomplexexample.entity.Room)" because "this.roomDao" is null
+	at com.sg.jdbctcomplexexample.dao.RoomDaoDBTest.testAddGetRoom(RoomDaoDBTest.java:68)
+
+com.sg.jdbctcomplexexample.dao.RoomDaoDBTest.testGetAllRooms()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.sg.jdbctcomplexexample.dao.RoomDao.addRoom(com.sg.jdbctcomplexexample.entity.Room)" because "this.roomDao" is null
+	at com.sg.jdbctcomplexexample.dao.RoomDaoDBTest.testGetAllRooms(RoomDaoDBTest.java:83)
+
+com.sg.jdbctcomplexexample.dao.RoomDaoDBTest.testDeleteRoom()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.sg.jdbctcomplexexample.dao.RoomDao.addRoom(com.sg.jdbctcomplexexample.entity.Room)" because "this.roomDao" is null
+	at com.sg.jdbctcomplexexample.dao.RoomDaoDBTest.testDeleteRoom(RoomDaoDBTest.java:128)
+
+com.sg.jdbctcomplexexample.dao.RoomDaoDBTest.testUpdateRoom()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.sg.jdbctcomplexexample.dao.RoomDao.addRoom(com.sg.jdbctcomplexexample.entity.Room)" because "this.roomDao" is null
+	at com.sg.jdbctcomplexexample.dao.RoomDaoDBTest.testUpdateRoom(RoomDaoDBTest.java:105)
+

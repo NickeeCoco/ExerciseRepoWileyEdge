@@ -1,0 +1,4 @@
+com\sg\booktracker\dto\Book.class
+com\sg\booktracker\dao\BookDao.class
+com\sg\booktracker\dao\BookDaoMemoryImpl.class
+com\sg\booktracker\ui\UserIO.class

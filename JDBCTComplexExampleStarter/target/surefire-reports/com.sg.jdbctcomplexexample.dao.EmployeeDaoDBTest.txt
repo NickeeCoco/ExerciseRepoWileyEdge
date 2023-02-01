@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: com.sg.jdbctcomplexexample.dao.EmployeeDaoDBTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec <<< FAILURE!
+com.sg.jdbctcomplexexample.dao.EmployeeDaoDBTest.testGetAllEmployees()  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.sg.jdbctcomplexexample.dao.EmployeeDao.addEmployee(com.sg.jdbctcomplexexample.entity.Employee)" because "this.employeeDao" is null
+	at com.sg.jdbctcomplexexample.dao.EmployeeDaoDBTest.testGetAllEmployees(EmployeeDaoDBTest.java:87)
+
+com.sg.jdbctcomplexexample.dao.EmployeeDaoDBTest.testAddGetEmployee()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.sg.jdbctcomplexexample.dao.RoomDao.getAllRooms()" because "this.roomDao" is null
+	at com.sg.jdbctcomplexexample.dao.EmployeeDaoDBTest.setUp(EmployeeDaoDBTest.java:46)
+	at com.sg.jdbctcomplexexample.dao.EmployeeDaoDBTest.testAddGetEmployee(EmployeeDaoDBTest.java:68)
+
+com.sg.jdbctcomplexexample.dao.EmployeeDaoDBTest.testDeleteEmployee()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.sg.jdbctcomplexexample.dao.EmployeeDao.addEmployee(com.sg.jdbctcomplexexample.entity.Employee)" because "this.employeeDao" is null
+	at com.sg.jdbctcomplexexample.dao.EmployeeDaoDBTest.testDeleteEmployee(EmployeeDaoDBTest.java:134)
+
+com.sg.jdbctcomplexexample.dao.EmployeeDaoDBTest.testUpdateEmployee()  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.sg.jdbctcomplexexample.dao.EmployeeDao.addEmployee(com.sg.jdbctcomplexexample.entity.Employee)" because "this.employeeDao" is null
+	at com.sg.jdbctcomplexexample.dao.EmployeeDaoDBTest.testUpdateEmployee(EmployeeDaoDBTest.java:109)
+
