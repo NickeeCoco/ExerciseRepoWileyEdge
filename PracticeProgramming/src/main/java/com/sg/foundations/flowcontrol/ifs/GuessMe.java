@@ -36,11 +36,11 @@ public class GuessMe {
         } 
         
         if(guess > answer) {
-            System.out.println(answer + "? Ha, nice try - too high! I chose " + answer + ".");
+            System.out.println(guess + "? Ha, nice try - too high! I chose " + answer + ".");
         } 
         
         if(guess < answer){
-            System.out.println(answer + "? Ha, nice try - too low! I chose " + answer + ".");
+            System.out.println(guess + "? Ha, nice try - too low! I chose " + answer + ".");
         }
     }
 }
