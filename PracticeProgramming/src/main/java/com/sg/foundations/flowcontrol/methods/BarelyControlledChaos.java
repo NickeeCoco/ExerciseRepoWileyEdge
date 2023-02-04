@@ -36,7 +36,7 @@ public class BarelyControlledChaos {
     static String randomAnimal() {
         Random rd = new Random();
         String[] animals = {"llama", "cow", "owl", "horse", "cat", "parrot", "snake"};
-        
+
         return animals[rd.nextInt(animals.length)];
     }
 
