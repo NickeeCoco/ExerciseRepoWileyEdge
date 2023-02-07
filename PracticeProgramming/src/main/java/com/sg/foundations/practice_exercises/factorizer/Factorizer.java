@@ -1,27 +1,27 @@
-package com.sg.foundations.practice_exercises;
+package com.sg.foundations.practice_exercises.factorizer;
 
 import java.util.Scanner;
 
 public class Factorizer {
-    public static void main(String[] args) {
-        Scanner userInput = new Scanner(System.in);
+    public int number = 0;
+    public int nbOfFactors = 0;
+    public int factorsSum = 0;
+    boolean isPerfect = false;
+    boolean isPrime = false;
 
-        int number = 0;
-        int nbOfFactors = 0;
-        int factorsSum = 0;
+    public Scanner userInput = new Scanner(System.in);
 
-        boolean isPerfect = false;
-        boolean isPrime = false;
+    public void factorize() {
 
         // ask for number above 1
-        while(number < 1) {
+        while (number < 1) {
             System.out.print("What number would you like to factor? ");
             number = userInput.nextInt();
         }
 
         // determine number of factors to initialize factors array
-        for(int i = 1; i < number; i++) {
-            if(number % i == 0) {
+        for (int i = 1; i < number; i++) {
+            if (number % i == 0) {
                 nbOfFactors++;
             }
         }
@@ -31,8 +31,8 @@ public class Factorizer {
         int factorsIndex = 0;
 
         // get all factors and add them to factors array
-        for(int i = 1; i < number; i++) {
-            if(number % i == 0) {
+        for (int i = 1; i < number; i++) {
+            if (number % i == 0) {
                 factors[factorsIndex] = i;
                 factorsIndex++;
             }
@@ -40,7 +40,7 @@ public class Factorizer {
 
         // print result
         System.out.println("The factors of " + number + " are:");
-        for(int i = 0; i < factors.length; i++) {
+        for (int i = 0; i < factors.length; i++) {
             System.out.print(factors[i] + " ");
         }
 
@@ -48,17 +48,17 @@ public class Factorizer {
         System.out.println(number + " has " + factors.length + " factors.");
 
         // sum all factors and store result
-        for(int i = 0; i < factors.length; i++) {
+        for (int i = 0; i < factors.length; i++) {
             factorsSum += factors[i];
         }
 
         // check if number is perfect
-        if(number == factorsSum) {
+        if (number == factorsSum) {
             isPerfect = true;
         }
 
         // check if number is prime
-        if(factors.length == 1) {
+        if (factors.length == 1) {
             isPrime = true;
         }
 
