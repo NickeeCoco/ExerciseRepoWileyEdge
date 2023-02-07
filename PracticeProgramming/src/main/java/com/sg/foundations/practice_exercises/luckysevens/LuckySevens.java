@@ -1,22 +1,24 @@
-package com.sg.foundations.practice_exercises;
+package com.sg.foundations.practice_exercises.luckysevens;
 
 import java.util.Random;
 import java.util.Scanner;
 
 public class LuckySevens {
-    public static void main(String[] args) {
-        Scanner userInput = new Scanner(System.in);
 
-        int totalAmount = 0;
-        int rolls = 0;
-        int maxAmount = 0;
-        int maxAmountRoll = 0;
+    Scanner userInput = new Scanner(System.in);
 
-        while(totalAmount <= 0) {
+    int totalAmount = 0;
+    int rolls = 0;
+    int maxAmount = 0;
+    int maxAmountRoll = 0;
+
+    public void playGame() {
+
+        while (totalAmount <= 0) {
             try {
                 System.out.print("How many dollars do you have? ");
                 totalAmount = Integer.parseInt(userInput.nextLine());
-            } catch(NumberFormatException ex) {
+            } catch (NumberFormatException ex) {
                 System.out.println("Please input an integer!");
             }
         }
@@ -24,12 +26,12 @@ public class LuckySevens {
         // set max amount to initial amount
         maxAmount = totalAmount;
 
-        while(totalAmount > 0) {
+        while (totalAmount > 0) {
             rolls++;
 
-            if(rollDice()) {
+            if (rollDice()) {
                 totalAmount += 4;
-                if(totalAmount > maxAmount) {
+                if (totalAmount > maxAmount) {
                     maxAmount = totalAmount;
                     maxAmountRoll = rolls;
                 }
@@ -42,7 +44,8 @@ public class LuckySevens {
         System.out.println("You should have quit after " + maxAmountRoll + " rolls when you had $" + maxAmount + ".");
     }
 
-    public static boolean rollDice() {
+
+    public boolean rollDice() {
         Random rdm = new Random();
 
         int die1 = rdm.nextInt(6) + 1;
@@ -50,7 +53,7 @@ public class LuckySevens {
 
         int sum = die1 + die2;
 
-        if(sum != 7) {
+        if (sum != 7) {
             return false;
         }
 
