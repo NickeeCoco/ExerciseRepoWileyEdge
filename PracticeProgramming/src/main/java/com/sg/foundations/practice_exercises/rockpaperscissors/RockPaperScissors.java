@@ -2,35 +2,35 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.sg.foundations.practice_exercises;
+package com.sg.foundations.practice_exercises.rockpaperscissors;
 
 import java.util.Random;
 import java.util.Scanner;
 
 /**
- *
  * @author Nickee Coco
  */
 public class RockPaperScissors {
 
-    public static void main(String[] args) {
-        int numberOfRounds = 0;
+    int numberOfRounds = 0;
 
-        int computerWins = 0;
-        int playerWins = 0;
-        int ties = 0;
+    int computerWins = 0;
+    int playerWins = 0;
+    int ties = 0;
 
-        int computerMoveInt;
-        int playerMoveInt = 0;
+    int computerMoveInt;
+    int playerMoveInt = 0;
 
-        String computerMove = null;
-        String playerMove = null;
+    String computerMove = null;
+    String playerMove = null;
 
-        boolean isValid = false;
-        boolean isPlaying = false;
+    boolean isValid = false;
+    boolean isPlaying = false;
 
-        Scanner userInput = new Scanner(System.in);
-        Random rdm = new Random();
+    Scanner userInput = new Scanner(System.in);
+    Random rdm = new Random();
+
+    public void playGame() {
 
         System.out.println("Hello there! Let's play Rock, Paper, Scissors!");
         System.out.println();
@@ -86,7 +86,7 @@ public class RockPaperScissors {
 
                 // map int to string
                 computerMove = mapIntegerToMove(computerMoveInt);
-                
+
                 System.out.println("You chose " + playerMove + " and I chose " + computerMove + ".");
 
                 // get score for this round
@@ -130,7 +130,7 @@ public class RockPaperScissors {
 
                 if (isContinue.equals("Y") || isContinue.equals("y")) {
                     isValid = true;
-                    
+
                     // reset score
                     ties = 0;
                     computerWins = 0;
@@ -148,15 +148,16 @@ public class RockPaperScissors {
         } while (isPlaying);
     }
 
+
     public static String mapIntegerToMove(int input) {
-        if(input == 1) {
+        if (input == 1) {
             return "Rock";
         }
-        
-        if(input == 2) {
+
+        if (input == 2) {
             return "Paper";
         }
-        
+
         return "Scissors";
-    }    
+    }
 }
