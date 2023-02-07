@@ -1,33 +1,35 @@
-package com.sg.foundations.practice_exercises;
+package com.sg.foundations.practice_exercises.interestcalculator;
 
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class InterestCalculator {
-    public static void main(String[] args) {
-        Scanner userInput = new Scanner(System.in);
 
-        double annualInterestRate = 0;
-        double amountInvested = 0;
-        double yearsInvesting = 0;
-        int period = 0;
+    Scanner userInput = new Scanner(System.in);
 
-        while(amountInvested <= 0) {
+    double annualInterestRate = 0;
+    double amountInvested = 0;
+    double yearsInvesting = 0;
+    int period = 0;
+
+    public void calculateInterests() {
+
+        while (amountInvested <= 0) {
             System.out.print("How much do you want to invest? ");
             amountInvested = userInput.nextInt();
         }
 
-        while(yearsInvesting <= 0) {
+        while (yearsInvesting <= 0) {
             System.out.print("How many years are investing? ");
             yearsInvesting = userInput.nextInt();
         }
 
-        while(annualInterestRate <= 0) {
+        while (annualInterestRate <= 0) {
             System.out.print("What is the annual interest rate % growth? ");
             annualInterestRate = userInput.nextInt();
         }
 
-        while(period <= 0 && period != 4 && period !=12 && period != 365) {
+        while (period <= 0 && period != 4 && period != 12 && period != 365) {
             System.out.print("What is the interest compound period? (4=quarterly, 12=monthly, 365=daily)");
             period = userInput.nextInt();
         }
@@ -37,7 +39,7 @@ public class InterestCalculator {
         double startAmount = amountInvested;
 
         // for each year investing
-        for(int i = 1; i <= yearsInvesting; i++) {
+        for (int i = 1; i <= yearsInvesting; i++) {
             DecimalFormat df = new DecimalFormat("0.00");
 
             double amountEarned = calculateYearlyInterests(startAmount, annualInterestRate, period)[1];
@@ -53,12 +55,12 @@ public class InterestCalculator {
         }
     }
 
-    public static double[] calculateYearlyInterests (double startAmount, double interestRate, int period){
+    public static double[] calculateYearlyInterests(double startAmount, double interestRate, int period) {
         double currentAmount = startAmount;
 
         double periodInterestRate = interestRate / period;
 
-        for(int i = 0; i < period; i++) {
+        for (int i = 0; i < period; i++) {
             currentAmount = currentAmount * (1 + (periodInterestRate) / 100);
         }
 
